@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<div class="container-fluid mt-5">
+		<div class="row">
+			<div class="col-md-1">
+				<a href="">agenda</a>
+			</div>
+			{# <div class="col-md-10 offset-md-1 row">
+										<div id='external-events'>
+											<p>
+												<strong>Draggable Events</strong>
+											</p>
+						
+											<div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+												<div class='fc-event-main'>My Event 1</div>
+											</div>
+											<div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+												<div class='fc-event-main'>My Event 2</div>
+											</div>
+											<div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+												<div class='fc-event-main'>My Event 3</div>
+											</div>
+											<div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+												<div class='fc-event-main'>My Event 4</div>
+											</div>
+											<div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+												<div class='fc-event-main'>My Event 5</div>
+											</div>
+						
+											<p>
+												<input type='checkbox' id='drop-remove'/>
+												<label for='drop-remove'>remove after drop</label>
+											</p>
+										</div> #}
+			<div id="calendarModal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">×</span>
+								<span class="sr-only">close</span>
+							</button>
+							<h4 id="modalTitle" class="modal-title"></h4>
+						</div>
+						<div id="modalBody" class="modal-body">
+                            <input type="text" class="form-control" placeholder="activité" name="activite"/>
+                            <button class="btn btn-success active">ok</button>
+                        </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div id="calendar" class="col-md-11"></div>
+		</div>
+	</div>
+</div>{% endblock %}
